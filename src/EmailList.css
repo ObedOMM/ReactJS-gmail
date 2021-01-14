@@ -1,0 +1,39 @@
+.emailList {
+    flex: 1;
+    overflow: scroll;
+}
+
+/* Cacher la barre de défilement pour Chrome, safari et Opera */
+.emailList::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cacher la barre de défilement pour IE, Edgde et FireFox */
+.emailList {
+    -ms-overflow-style: none; /* IE et Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.emailList__settings {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding-right: 10px;
+}
+
+.emailList__sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+}
+
+.emailList__list {
+    padding-bottom: 20%;
+}
